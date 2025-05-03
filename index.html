@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arsy</title>
+  <title>Arsy | Linktree Style</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'rainbow': 'rainbow 4s linear infinite',
+          },
+          keyframes: {
+            rainbow: {
+              '0%': { backgroundColor: '#ff0000' },
+              '16%': { backgroundColor: '#ff9900' },
+              '33%': { backgroundColor: '#33cc33' },
+              '50%': { backgroundColor: '#3399ff' },
+              '66%': { backgroundColor: '#9900cc' },
+              '83%': { backgroundColor: '#ff3399' },
+              '100%': { backgroundColor: '#ff0000' },
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-black text-white flex items-center justify-center min-h-screen px-4">
   <div class="w-full max-w-sm p-6 bg-black rounded-2xl shadow-xl text-center">
@@ -20,15 +42,15 @@
     <div class="mb-6">
       <h2 class="text-sm font-semibold text-gray-400 mb-3">Support me through sites below!</h2>
       <div class="space-y-3">
-        <a href="https://saweria.co/Artsy/" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
-          <i class="fas fa-donate mr-4 text-white"></i>
-          Saweria
+        <a href="https://saweria.co/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
+          <i class="fas fa-donate mr-4"></i>
+          Support me on Saweria :D
         </a>
-        <a href="https://sociabuzz.com/artsy/tribe/" target="_blank"
-          class="flex items-center justify-center bg-[#DC143C] hover:bg-[#954535] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
-          <i class="fas fa-donate mr-4 text-white"></i>
-          SociaBuzz (SOON!)
+        <a href="https://sociabuzz.com/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
+          <i class="fas fa-donate mr-4"></i>
+          My SociaBuzz Page! (SOON)
         </a>
       </div>
     </div>
@@ -37,25 +59,25 @@
     <div class="mb-6">
       <h2 class="text-sm font-semibold text-gray-400 mb-3">Socials</h2>
       <div class="space-y-3">
-        <a href="https://www.tiktok.com/@artsyoi" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://tiktok.com/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fab fa-tiktok mr-4"></i>
-          <span class="text-sm">TikTok</span>
+          <span>TikTok</span>
         </a>
-        <a href="https://www.youtube.com/@artsyoi/" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://youtube.com/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fab fa-youtube mr-4"></i>
-          <span class="text-sm">YouTube</span>
+          <span>YouTube</span>
         </a>
-        <a href="https://www.twitch.tv/artsyoi/" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://twitch.tv/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fab fa-twitch mr-4"></i>
-          <span class="text-sm">Twitch</span>
+          <span>Twitch</span>
         </a>
-        <a href="https://www.instagram.com/artsyoi/" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://instagram.com/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fab fa-instagram mr-4"></i>
-          <span class="text-sm">Instagram</span>
+          <span>Instagram</span>
         </a>
       </div>
     </div>
@@ -64,19 +86,19 @@
     <div>
       <h2 class="text-sm font-semibold text-gray-400 mb-3">Links</h2>
       <div class="space-y-3">
-        <a href="https://r2beat-cdn.qijisoft.com/live/downloader/VFUNLauncherInstaller.exe" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://valove.site/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fas fa-globe mr-4"></i>
-          <span class="text-sm">VFUN Launcher Download</span>
+          <span>Website Valove</span>
         </a>
-        <a href="https://discord.gg/rqtDngrxEy/" target="_blank"
-          class="flex items-center justify-center bg-[#2c2c2e] hover:bg-[#3a3a3c] text-white font-bold py-4 px-6 w-full rounded-xl transition duration-300 transform hover:scale-105">
+        <a href="https://discord.gg/" target="_blank"
+          class="flex items-center justify-center bg-[#2c2c2e] hover:animate-rainbow text-white font-bold py-4 px-6 rounded-xl transition duration-500 transform hover:scale-105">
           <i class="fab fa-discord mr-4"></i>
-          <span class="text-sm">Official Discord LSO VFUN</span>
+          <span>Discord Server</span>
         </a>
       </div>
     </div>
-    
+
   </div>
 </body>
 </html>
